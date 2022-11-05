@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(font/Ubuntu-Regular.ttf) format('opentype');
+}
+
+:root {
+    --Ubuntu-Regular: 'Ubuntu-Regular';
+}
+
+body {
+    margin: 0;
+}
+
+.mainlog {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(11, 16, 31);
+    display: flex;  /*as divs leftlog e rihtlog ficarão lado a lado*/
+    justify-content: center; /*Justifica as divs no eixo x*/
+    align-items: center; /*Justifica a s divs no eixo y*/
+}
+
+.imagen {
+    min-width: 80%;
+}
+
+.leftlog {
+    width: 50vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftlog h1 {
+    color: rgb(219, 46, 118);
+    font-family: var(--Ubuntu-Regular);
+}
+
+.rigthlog {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlog {
+    width: 50%;
+    background-color: rgb(18, 26, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(7, 3, 12, 0.548);
+}
+
+.cardlog h1 {
+    color: rgb(233, 42, 122);
+    font-family: var(--Ubuntu-Regular);
+    letter-spacing: 3px;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.campotxt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.campotxt input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+   
+    background-color: rgb(30, 42, 78);
+    color: rgb(253, 247, 250);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(7, 3, 12, 0.548);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campotxt label {
+    color: rgb(223, 139, 174);
+    margin-bottom: 5px;
+    font-family:var(--Ubuntu-Regular);
+}
+
+.loginbottom {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 42, 122);
+    color: rgb(18, 26, 51);
+    font-size: 12pt;
+    font-family:var(--Ubuntu-Regular);
+    box-shadow: 0px 10px 40px rgba(7, 3, 12, 0.548);
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.loginbottom:hover {
+    background-color: rgb(240, 73, 143);
+    box-shadow: 0px 10px 40px rgba(92, 16, 73, 0.63);
+    transition-duration: 0.3s;
+    width: 101%;
+    height: 101%;
+    letter-spacing: 3.5px;
+}
+
+.loginbottom:active {
+    background-color: rgb(196, 50, 111);
+    box-shadow: 0px 10px 40px rgba(7, 3, 12, 0.548);
+    transition-duration: 0.5s;
+    width: 97%;
+    height: 97%;
+    letter-spacing: 1px;
+}
+
+
+
+@media only screen and (max-width:630px){
+
+   .mainlog {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+   }
+
+   .cardlog {
+    height: auto;
+    width: 80%;
+    margin: 0;
+
+   }
+
+}
